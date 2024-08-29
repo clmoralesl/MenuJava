@@ -1,0 +1,37 @@
+package menuopcion;
+import java.util.Scanner;
+
+public class Menuopcion {
+
+    public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+        int opcionMenu;
+                                   
+    do{
+        System.out.println("*******meNU********");
+        System.out.println("-------------------");
+        System.out.println("1.- Primera Opcion");
+        System.out.println("2.- Segunda Opcion");
+        System.out.println("3.- Salir");
+        
+        opcionMenu = teclado.nextInt();
+        
+        switch(opcionMenu){
+            case 1:
+                System.out.println("Esta es la opcion 1");
+                break;
+            case 2:
+                System.out.println("Esta es la opcion 2");
+                break;
+            case 3:
+                System.out.println("Saliendo del programa");
+                break;
+            default:
+                System.out.println("Opcion invalida");
+        }
+    }
+    while (opcionMenu !=3);
+    }
+
+    
+}
